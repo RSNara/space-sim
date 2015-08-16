@@ -31,11 +31,10 @@ class Vector {
             y: this.y - vector.y
         });
     }
-    distanceFrom({vector}){
-        return this.subtract({ vector }).size();
-    }
-
-    distanceTo({vector}) {
-        return this.distanceFrom({vector});
+    multiply({number}){
+        return new Vector({
+            x: this.x * number,
+            y: this.y * number
+        });
     }
 }
