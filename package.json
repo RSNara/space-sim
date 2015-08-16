@@ -1,0 +1,16 @@
+{
+  "name": "space-simulator",
+  "version": "0.0.0",
+  "description": "MVC",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -d -e main.js -t [ babelify --sourceMapRelative . ] --outfile ./build/main.js"
+  },
+  "author": "Ramanpreet Nara",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.1.3",
+    "browserify": "^11.0.1"
+  }
+}
